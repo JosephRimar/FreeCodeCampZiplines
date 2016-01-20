@@ -1,0 +1,195 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	text-align: center;
+}
+
+html, body, #wrapper {
+	height: 97%;
+	width: 100%;
+}
+
+
+#wrapper {
+	color: #eee;
+	padding-top: 10%;
+	background: radial-gradient(circle,rgba(0,0,0,.8), rgba(0,0,0,.9), rgba(0,0,0,1)); 
+	overflow: scroll;
+}
+
+#title {
+	padding-top: 2px;
+	width: 30%;
+	margin: 2% auto 0;
+	border-bottom: solid 1px;
+	padding-bottom: 5px;
+	font-family: 'Pontano Sans', sans-serif;
+	letter-spacing: 2px;
+}
+
+.headerButtons {
+	margin: auto;
+	font-size: 1em;
+	border-radius: 10px;
+}
+
+.selected {
+	/*background-color: white;
+	color: black;*/
+	font-size: 1.15em;
+}
+.unselected:hover {
+	transform: rotate(360deg);
+}
+
+
+#quoteWrapper {
+	width: 75%;
+	margin: auto;
+	margin-bottom: 10px;
+}
+
+#quote {
+	padding: 20px 20px 5px 20px;
+	font-size: 1em;
+	font-family: 'Lora', serif;
+	font-weight: 100;
+}
+#author {
+	font-size: 1em;
+	padding-top: 10px;
+	font-style: italic;
+}
+#twitterLogo {
+	width: 25px;
+	height: 25px;
+}
+
+#flickrWrap {
+	display: none;
+}
+#flickrPhoto {
+	display: none;
+	margin-top: 20px;
+	width: 75%;
+	margin: auto;
+}
+
+#flickrWrap h3 {
+	font-size: 1rem;
+	font-family: 'Pontano Sans', sans-serif;
+}
+
+.action {
+	border: solid 1px;
+	font-size: .75em;
+	border-radius: 10px;
+}
+
+.photoFeed {
+	min-width: 280px;
+	min-height: 280px;
+	max-height: 400px;
+	max-width: 280px;
+}
+a {
+	text-decoration: none;
+	color: white;
+	font-style: italic;
+}
+
+button {
+	font-size: 1em;
+	border: none;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background-color: inherit;
+	color: white;
+	padding: 5px;
+	font-family: 'Pontano Sans', sans-serif;
+}
+
+button:hover {
+	background-color: black;
+	color: white;
+	cursor: pointer;
+}
+
+button:focus {
+	outline: none;
+}
+
+footer {
+	padding: 20px;
+	background-color: black;
+	color: white;
+}
+
+footer p {
+	margin-bottom: 10px;
+	height: 3%;
+	
+}
+
+@media (min-width: 780px) {
+	#wrapper {
+		padding-top: 3%;
+	}
+	#title {
+		width: 90%;
+		max-width: 1024px;
+		border: none;
+		margin-bottom:180px;
+		text-align: right;
+	}
+
+	#title h1 {
+		margin: 0;
+		text-align: left;
+		float: left;
+		font-size: 1.5em;
+
+	}
+
+	#title h1:after {
+		content: "";
+		clear: both;
+	}
+
+	#headerButtons {
+		float: right;
+	}
+
+	#quoteWrapper {
+		max-width: 980px;
+		
+	}
+	#quote {
+		font-size: 1.6rem;
+	}
+
+	#flickrWrap {
+		margin-top: -5%;
+	}
+	.photoFeed {
+	min-width: 280px;
+	min-height: 280px;
+	max-height: 480px;
+	max-width: 480px;
+}
+}
+
+@media (min-width: 1024px) {
+	#wrapper {
+		padding-top: 2%;
+	}
+
+	#quoteWrapper {
+		padding-top: 3%;
+	}
+
+
+}
+

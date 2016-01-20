@@ -1,0 +1,292 @@
+/*-------- Reset all Browser Styling --------*/
+html, body { margin: 0px; padding: 0px; border: 0px; }
+body { font: 1em/1.25 Arial, Helvetica, sans-serif; }
+h1, h2, h3, h4, h5, h6 { margin: 0; 
+	padding: 0; 
+	font-weight: normal; 
+	font-family: Arial, 
+	Helvetica, sans-serif; 
+}
+
+/*-------- Box Sizing --------*/
+
+* {
+	box-sizing: border-box;
+}
+
+/*-------- Main Styling --------*/
+
+html {
+	background-color: black;
+}
+
+html, body, #mainWrapper {
+	height: 100%;
+	text-align: center;
+	margin: auto;
+}
+
+body {
+	position: relative;
+	
+	
+}
+
+
+
+
+#titleInfo {
+	margin: 10px auto;
+	font-size: .5rem;
+}
+
+#titleInfo span {
+	font-size: 1rem;
+	font-weight: 300;
+}
+
+#footer {
+	position: absolute;
+	bottom: 0;
+	margin-top: 10px;
+	/*margin: 0 auto 5px;*/
+	
+	width: 100%;
+	font-size: .5em;
+}
+
+#mainWrapper {
+	overflow: scroll;
+	background-image: 
+		linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.5)),
+		url("http://s3-media4.fl.yelpcdn.com/bphoto/K6ucDigUgvDHpvL1HQELCA/o.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: "Lato" Arial;
+	font-weight: 100;
+	letter-spacing: 2px;
+
+	color: white;
+}
+
+#smallWeather {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	margin-left: 40px;
+	margin-bottom: 40px;
+	text-align: left;
+	display: block;
+}
+
+#smallWeather h1 {
+	font-family: "Lato" Arial;
+	font-weight: 300;
+	font-size: 5em;
+	padding: 0;
+}
+
+#smallWeather p {
+	padding: 0;
+	margin: 0;
+}
+
+#smallWeather p:last-child {
+	font-size: .5em;
+	padding-bottom: 10px;
+}
+
+#smallWeather:hover {
+	cursor: pointer;
+}
+
+#bigWeather {
+	display: none;
+}
+
+#exitButton {
+	float: right;
+	margin-top: -50px;
+	margin-right: 10px;
+	font-size: 2em;
+}
+
+#exitButton:hover {
+	cursor: pointer;
+}
+
+#cityTag {
+	margin: 5% auto 0;
+}
+
+#conditionsTag {
+	margin: 0 auto;
+}
+
+#windConditionsTag {
+	margin: 0 auto 2%;
+}
+#temperatureTag {
+	margin: 0 auto  20px;
+	font-size: 4em;
+	width: 200px;
+	font-family: "Lato";
+	font-weight: 100;
+}
+
+#temperatureTag:hover {
+	cursor: pointer;
+}
+
+#smallConditionsTag {
+	position: relative;
+	margin: 0 auto;
+	height: 8%;
+	width: 70%;
+	text-align: left;
+}
+#smallConditionsTag > p {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	margin-bottom: 2px;
+	margin-left: 5px;
+	display: inline-block;
+	font-size: .8em;
+}
+#smallConditionsTag > p:last-child {
+	right: 0;
+	text-align: right;
+	margin-right: 5px;
+	/*margin-left: 50%;*/
+}
+
+#hourlyForcastTag {
+	text-align: left;
+	overflow: scroll;
+	white-space: nowrap;
+	margin: 0 auto;
+	width: 70%;
+	border-top: solid 1px;
+	border-bottom: solid 1px;
+}
+
+.hourlyForcast {
+	display: inline-block;
+	text-align: center;
+	margin: 0 10px;
+}
+#weeklyForcastTag {
+	margin: auto;
+	overflow: scroll;
+	height: 40%;
+	width: 70%;
+	border-bottom: solid 1px;
+}
+
+ #weeklyForcastTag div:last-child {
+ 	margin-bottom: 20px;
+ }
+
+.dailyWeather {
+	position: relative;
+	height: 20%;
+	min-height: 25px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding: 0;
+	/*border: solid 1px;*/
+}
+.dailyWeather p {
+	display: inline-block;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.dailyWeather > p:first-child {
+	position: absolute;
+	left:0;
+	bottom: 0;
+	margin-left: 5px;
+}
+
+.dailyWeather > p > img {
+	position: absolute;
+	left: 46%;
+	right: 47%;
+	bottom: 0;
+	margin-bottom: -12px;
+}
+
+.dailyWeather > p:last-child {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	margin-right: 5px;
+}
+
+#summary {
+	border-bottom: solid 1px;
+	min-height: 25px;
+	width: 70%;
+	margin: auto;
+	text-align: left;
+	padding: 10px 5px;
+}
+
+#dailyDetials {
+	width: 70%;
+	margin: auto 20px;
+}
+
+#dailySummaryLeft, #dailySummaryRight {
+	display: inline-block;
+	width: 150px;
+	margin-top: 10px;
+}
+
+#dailySummaryLeft {
+	text-align: right;
+	margin-right: 5px;
+}
+
+#dailySummaryRight {
+	text-align: left;
+}
+
+#dailySummaryLeft p, #dailySummaryRight p {
+	margin: 0 auto;
+	padding: 0px;
+}
+
+#dailySummaryLeft >p:nth-child(even), #dailySummaryRight >p:nth-child(even) {
+	padding-bottom: 20px;
+}
+
+@media (min-width: 400px) {
+	#smallConditionsTag, #hourlyForcastTag, #weeklyForcastTag, #summary {
+		max-width: 700px;
+	}
+	#mainWrapper {
+		max-height: 1000px
+	}
+
+	#temperatureTag {
+		font-size: 6em;
+	}
+
+	#smallWeather h1 {
+		font-size: 7em;
+	}
+
+	#smallWeather p {
+		font-size: 2em;
+	}
+
+	#exitButton {
+		margin-top: -70px;
+	}
+}
+
+
+

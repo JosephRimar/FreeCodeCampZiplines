@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300italic|Lato:400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="main.css">
+		<title>Pomodoro Clock</title>
+	</head>
+	<body>
+		<div id="mainWrapper">
+			<header>
+				<h4>Joseph Rimar</h4>
+			</header>
+			<div id="Machine">
+				<div id="titleBlock">
+					<h6>Free Code Camps</h6>
+					<h1>POMODORO CLOCK</h1>
+				</div>
+				<h4 id="breakTitle">Break</h4>
+				<h4 id="sessionTitle">Session</h4><br>
+				<div id="mainControls">
+					<div id="breakControls" class='controls'>
+						<button id="decreaseBreak">-</button>
+						<p id="breakLabel"></p>
+						<button id="increaseBreak">+</button>
+					</div>
+					<div id="sessionControls" class='controls'>
+						<button id="decreaseSession">-</button>
+						<p id="sessionLabel"></p>
+						<button id="increaseSession">+</button>
+					</div>
+				</div>
+				<div id="mainTimerDiv">
+					<h2 id="timerText"></h2>
+				</div>
+				<div id='Current'>
+					<p id='sessionTag'>Session</p>
+					<p id='breakTag'>Break</p>
+				</div>
+				<button id='Reset'>Reset</button>
+				<h5 id='Instructions'>Click Timer to Start/Stop Countdown</h5>
+
+			</div>
+		</div>
+		<footer>
+			<p>Joseph Rimar | Designer | Developer</p>
+		</footer>
+		<script type="text/javascript" src='app.js'></script>
+	</body>
+</html>

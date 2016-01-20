@@ -1,0 +1,382 @@
+/*-------- Reset all Browser Styling --------*/
+html, body { margin: 0px; padding: 0px; border: 0px; }
+body { font: 1em/1.25 Arial, Helvetica, sans-serif; }
+h1, h2, h3, h4, h5, h6 { margin: 0; 
+	padding: 0; 
+	font-weight: normal; 
+	font-family: Arial, 
+	Helvetica, sans-serif; 
+}
+/*-------- Box Sizing --------*/
+* {
+	box-sizing: border-box;
+}
+
+/*-------- Main Styling --------*/
+
+html, body, #mainWrapper {
+	height: 100%;
+	margin: 0 auto;
+	text-align: center;
+	font-family: "Lato" Arial;
+	font-weight: 400;
+
+}
+
+/*body {
+	overflow: scroll;
+}*/
+#mainWrapper {
+	overflow: scroll;
+	background: linear-gradient(rgba(0,0,0,.9),rgba(0,0,0,.9),rgba(0,0,0,.9),rgba(0,0,0,.9),
+		rgba(0,0,0,.7),rgba(0,0,0,6),rgba(0,0,0,1));
+}
+
+#wall, #floor {
+	display: none;
+}
+ 
+header {
+	font-family: "Merriweather" Arial;
+	font-weight: 400;
+	letter-spacing: 2px;
+	font-size: .7em;
+	background-color: black;
+	color: white;
+	height: 3%;
+	padding-top: 5px;
+}
+
+#titleInfo {
+	margin: 20px auto;
+	color: white;
+}
+
+#titleInfo * {
+	font-family: "Lato" sans-serif;
+	font-weight: 100;
+	letter-spacing: 2px;
+	padding-bottom: .5%;
+}
+
+#titleInfo h2 {
+	font-size: 2.5rem;
+	margin-top: -3px;
+}
+
+#calcBody {
+	margin: 40px auto 20px;
+	height: 542px;
+	width: 272px;
+	padding: 1px;
+	border-radius: 25px;
+	background-color: silver;
+}
+
+
+#calcbodyInside {
+	padding: 0;
+	float: left;
+	background-color: black;
+	height: 540px;
+	width: 270px;
+
+	border-radius: 24px;
+
+}
+
+#calcInterior {
+	height: 510px;
+	width: 250px;
+	/*border: solid 1px;*/
+	border-radius: 15px;
+	padding-top: 1px;
+	margin: 10px auto;
+	background-color: black; /*rgba(255,255,255,0.9);*/
+
+}
+
+#calcTop {
+	margin: -2px -1px 0px -1px;
+	background-color: rgba(0,0,0,1);
+	height: 52px;
+	width: 252px;
+	border-radius: 8px 8px 0 0;
+}
+
+#camera {
+	float: left;
+	display: inline-block;
+	height: 5px;
+	width: 5px;
+	border-radius: 50%;
+	background-color: blue;
+	margin: 15px 0 0 90px;
+}
+
+#earPiece {
+	display: inline-block;
+	height: 5px;
+	width: 40px;
+	margin: 15px 0 0 -95px;
+	background-color: #222;
+	border-radius: 3px;
+
+}
+
+#calcBottom {
+	margin: 0px -1px -1px -1px;
+	width: 252px;
+	background-color: rgba(0,0,0,1);
+	height: 51px;
+	border-radius: 0 0 8px 8px;
+}
+
+#fingerButtonOutside {
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	margin: 13px auto;
+	padding: 1px;
+	border-radius: 50%;
+	/*background: linear-gradient(to left bottom, white, silver,#666, #666, silver, white);*/
+}
+
+#fingerButtonInside {
+	height: 38px;
+	width: 38px;
+	border-radius: 50%;
+	background-color: black;
+}
+
+#calcDisplay {
+	position: relative;
+	float: left;
+	
+	border: solid 2px black;
+	border-bottom: none;
+	margin-left: -1px;
+	border-radius: 2px 2px 0 0;
+	width: 250px;
+	text-align: right;
+	padding-top: 10px;
+	height: 101px;
+	font-family: "Lato" Arial;
+	font-weight: 100;
+	font-size: 2.5em;
+	overflow: scroll;
+	background-color: #222;
+	color: white;
+	
+}
+
+#calcDisplay p {
+	margin-right: 5px;
+	
+}
+
+/*#calcDisplay:after {
+	content: "";
+	clear: both;
+}
+*/
+#calcControls {
+	/*margin-top: -1px;
+	border: solid 1px black;
+	float: left;
+	margin-left: -1px;*/
+	padding: 0;
+	width: 250px;
+
+}
+
+.mainControls {
+	width: 250px;
+	text-align: center;
+	margin: 0 auto;
+	padding: 0;
+	z-index: -1;
+}
+
+.mainControls ul {
+	display: table;
+	width: 248px;
+	height: 62px;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+.mainControls li {
+	display: table-cell;
+	width: 61px;
+	height: 62px;
+	font-weight: 400;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	vertical-align: middle;
+	z-index: 0;
+	background-color: silver;
+	border: solid 1px black;
+	font-size: 1.3em;
+}
+
+.mainControls li:hover {
+	cursor: pointer;
+}
+
+.mainControls li:active {
+	cursor: pointer;
+	font-size: .9em;
+	box-shadow:  inset 0px 0px 15px 5px rgba(255, 255, 190, .3); /*rgba(0, 0, 0, .3)*/
+}
+
+.nonNumbers {
+	background-color: #888 !important;
+}
+
+.rightAligned {
+	background-color: orange !important;
+	color: white;
+}
+
+#zeroButton {
+	width: 122px;
+}
+
+#colorOptions {
+	display: block;
+	width: 80%;
+	margin: 10px auto;
+	padding: 0;
+	
+}
+#colorOptions li {
+	display: inline-block;
+	padding: 8px;
+	font-family: "Merriweather" Arial;
+	font-weight: 300;
+	font-size: 1.2em;
+}
+
+#colorOptions li:hover {
+	cursor: pointer;
+}
+
+#silverColor {
+	color: silver;
+}
+
+#blackColor {
+	color: grey;
+}
+
+#goldColor {
+	color: rgb(246,186,160); /*rgb(226,186,120)*/
+}
+
+footer {
+	height: 45px;
+	padding-top: 1px;
+	background-color: black;
+	color: white;
+	font-size: .7em;
+	font-family: "Lato" Arial;
+	font-weight: 100;
+	letter-spacing: 2px;
+
+}
+
+/*different color combinations*/
+.silverRing {
+ 	background: -webkit-linear-gradient(left top, white, silver, #777, #777, silver, white) !important;
+ 	background: -o-linear-gradient(bottom right, white, silver, #777, #777, silver, white) !important;
+ 	background: -moz-linear-gradient(bottom left, white, silver, #777, #777, silver, white) !important;
+ 	background: linear-gradient(bottom left, white, silver, #777, #777, silver, white) !important;
+
+
+}
+
+.goldRing {
+	background: -webkit-linear-gradient(left top, white,white, rgb(145,112,59), rgb(145,112,59), white, white) !important;
+	background: -o-linear-gradient(bottom right, white,white, rgb(145,112,59), rgb(145,112,59), white, white) !important;
+	background: -moz-linear-gradient(bottom right, white,white, rgb(145,112,59), rgb(145,112,59), white, white) !important;
+	background: linear-gradient(to bottom right, white,white, rgb(145,112,59), rgb(145,112,59), white, white) !important;
+}
+
+@media(min-width: 499px) {
+
+	#mainWrapper {
+		background: radial-gradient(rgba(0,0,0,.7) 0%,
+			rgba(0,0,0,.75) 10%, rgba(0,0,0,.8) 30%,rgba(0,0,0,.84) 40%, rgba(0,0,0,.88) 50%, rgba(0,0,0,.95) 90%),
+			linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.2), rgba(0,0,0,.1));
+	}
+	
+/*	#wall, #floor {
+		padding: 0;
+		margin:0;
+		display: block;
+		border: none;
+
+	}
+
+	#wall {
+		position: absolute;
+		top: 0;
+		height: 65%;
+		width: 100%;
+		background-image: radial-gradient(ellipse farthest-corner at 60% 70% , rgba(0,0,0,.75) 0%, 
+			rgba(0,0,0,.78) 10%, rgba(0,0,0,.8) 20%,rgba(0,0,0,.84) 50%, rgba(0,0,0,.95) 90%),
+			linear-gradient(rgba(0,0,0,.05), rgba(0,0,0,.1));
+		z-index: 0;
+	}
+
+	#floor {
+
+		position: absolute;
+		top: 65%;
+		height: 35%;
+	/*	margin-top: -1px;*/
+	
+	/*	margin-bottom: 0;
+		width: 100%;
+		
+		background-image: radial-gradient(ellipse farthest-corner at 70% 70% , rgba(0,0,0,.7) 0%,
+			rgba(0,0,0,.75) 30%, rgba(0,0,0,.8) 60%,rgba(0,0,0,.84) 70%, rgba(0,0,0,.88) 80%, rgba(0,0,0,.95) 90%),
+			linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.2));
+		z-index: 0;
+
+	}*/
+	#calcBody {
+		
+		box-shadow: 20px 20px 40px rgba(0,0,0,.5);
+	}
+
+	header {
+		padding-top: 7px;
+		width: 100%;
+		/*margin-top: -850px;*/
+	}
+	#titleInfo {
+		margin: 50px auto;
+	}
+
+	#calcBody {
+		margin: 70px auto 50px;
+	}
+
+	footer {
+		padding-top: 3px;
+	}
+}
+
+@media (min-height: 1000px) {
+	#wall {
+		height: 60%;
+	}
+
+	#floor {
+		height: 41%;
+	}
+}
+
